@@ -1,0 +1,5 @@
+name = Gff Importer 
+description = Customizations for the Webform module to import and parse a *.gff file
+core = 7.x
+package = Webform
+dependencies[] = webform
