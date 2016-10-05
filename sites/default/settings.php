@@ -217,9 +217,9 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => 'd7_bio_spanish',
-      'username' => 'root',
-      'password' => 'root',
+      'database' => 'drupal_bio',
+      'username' => 'user',
+      'password' => 'password',
       'host' => '127.0.0.1',
       'port' => '',
       'driver' => 'mysql',

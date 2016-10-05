@@ -27,10 +27,13 @@
     //main data array formater
     while(!feof($file)) {
        $line = fgets($file);
+
+
+
        if(substr($line,0,2) !== '##' ){
         
          $pieces = explode("\t", $line);
-        
+
           if(count($pieces)>1){
             foreach ($pieces as $key => $value) {
             $clean_array[$i]['contig']['name']   = $pieces[0];
@@ -70,8 +73,11 @@
     }
 
     //creates an array with the sequenses
-    $sequenses = $clean_array['seq'];
-    unset($clean_array['seq']);
+
+    if(isset($clean_array['seq'])){
+        $sequenses = $clean_array['seq'];
+        unset($clean_array['seq']);
+    }
 
     //loop for sequense distribution depending of positions
     global $user;
