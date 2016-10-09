@@ -212,6 +212,8 @@
  *   );
  * @endcode
  */
+
+
 $databases = array (
   'default' => 
   array (
@@ -227,6 +229,24 @@ $databases = array (
     ),
   ),
 );
+}else{
+  $databases = array (
+  'default' => 
+  array (
+    'default' => 
+    array (
+      'database' => 'drupal_bio',
+      'username' => 'root',
+      'password' => '',
+      'host' => '127.0.0.1',
+      'port' => '',
+      'driver' => 'mysql',
+      'prefix' => '',
+    ),
+  ),
+);
+}
+
 
 /**
  * Access control for update.php script.
