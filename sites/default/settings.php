@@ -214,6 +214,8 @@
  */
 
 
+if($_SERVER['HTTP_HOST'] == 'local.bio.parser'){
+
 $databases = array (
   'default' => 
   array (
